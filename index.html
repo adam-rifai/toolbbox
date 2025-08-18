@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toolbox - All-in-One Utility Tools</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">🛠️ Toolbox</a>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <header class="hero">
+        <h1>Your All-in-One Toolbox</h1>
+        <p>Free tools for everyday tasks - no installation required</p>
+      </header>
+
+      <!-- Search and Category Filters -->
+      <div class="filters">
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search tools..." />
+          <button id="clearSearch">✕</button>
+        </div>
+        <div class="category-menu">
+          <button class="category-btn active" data-category="all">
+            All Tools
+          </button>
+          <button class="category-btn" data-category="productivity">
+            Productivity
+          </button>
+          <button class="category-btn" data-category="text">Text</button>
+          <button class="category-btn" data-category="security">
+            Security
+          </button>
+          <button class="category-btn" data-category="design">Design</button>
+        </div>
+      </div>
+
+      <!-- Tools Grid -->
+      <div class="tools-grid" id="toolsGrid">
+        <!-- Tools will be populated by JavaScript -->
+      </div>
+    </main>
+
+    <!-- Tool Modals -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal" id="toolModal">
+        <div class="modal-header">
+          <h2 id="modalTitle">Tool Title</h2>
+          <button class="close-modal" id="closeModal">×</button>
+        </div>
+        <div class="modal-content" id="modalContent">
+          <!-- Tool content will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
